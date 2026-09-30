@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  mi-web:
+    build: .
+    container_name: web-cv
+    ports:
+      - "8080:80" # Accedes desde http://tu-ip:8080
+    restart: always
